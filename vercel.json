@@ -1,14 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "src/output.css",
-      "use": "@vercel/static"
-    }
-  ],
-  "rewrites": [{ "source": "/", "destination": "/src/index.html" }]
+  "rewrites": [
+    { "source": "/", "destination": "/src/index.html" },
+    { "source": "/output.css", "destination": "/src/output.css" }
+  ]
 }
