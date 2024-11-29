@@ -26,6 +26,20 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+
+      // Jika scroll lebih dari 50px, tambahkan kelas bg-white
+      if (window.scrollY > 10) {
+        navbar.classList.add("bg-white", "shadow");
+        navbar.classList.remove("bg-transparent");
+      } else {
+        navbar.classList.remove("bg-white", "shadow");
+        navbar.classList.add("bg-transparent");
+      }
+    });
+  </script>
   <body class="text-justify md:text-left font-poppins">
     <!-- Navbar -->
     <div x-data="{ open: false }" class="bg-white">
@@ -1546,6 +1560,5 @@
     </footer>
 
     <script src="//unpkg.com/alpinejs" defer></script>
-    <script type="module" src="./assets/js/index.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/src/index.html" },
-    { "source": "/output.css", "destination": "/src/output.css" }
+    { "source": "/output.css", "destination": "/src/output.css" },
+    { "source": "/mark.svg", "destination": "/src/assets/mark.svg" }
   ]
 }
